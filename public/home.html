@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ทำนายราศี</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/css/app.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+
+        <style type="text/css">
+            @font-face {  
+                font-family: 'PJ_WangNgan1.1';  
+                src: url('font/PJ_WangNgan1.1.eot');  
+                src: local('myfont'), url('font/PJ_WangNgan1.1.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                }
+            @font-face {  
+                font-family: 'Bangnampueng';  
+                src: url('font/Bangnampueng.eot');  
+                src: local('myfont'), url('font/Bangnampueng.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                } 
+            @font-face {  
+                font-family: 'WR Tish Kid2';  
+                src: url('font/WR Tish Kid2.eot');  
+                src: local('myfont'), url('font/WR Tish Kid2.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                } 
+
+
+            html, body {
+                background-image: url('image/bg.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                -o-background-size: 100% 100%, auto;
+                -moz-background-size: 100% 100%, auto;
+                -webkit-background-size: 100% 100%, auto;
+                background-size: 100% 100%, auto;
+                color: #FFFFFF;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 130px;
+                font-family: 'Bangnampueng', sans-serif;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .button {
+                border: none;
+                color: white;
+                padding: 2px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                margin: 1px 1px;
+                cursor: pointer;
+                font-family: 'WR Tish Kid2', sans-serif;
+                font-size: 25px;
+            }
+            .button3 {border-radius: 8px;}
+
+            .m-b-md {
+                margin-bottom: 20px;
+            }
+
+            .txt{
+                font-family: 'WR Tish Kid2', sans-serif;
+                color: #663300;
+                font-size: 50px;
+            }
+
+            .txt2{
+                font-size: 70px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-center position-ref">
+            <div class="content">
+                <div class="title m-b-md">
+                    ทำนายราศี
+                </div>
+                <div ng-app="formApp" ng-controller="FormCtrl">
+                <div class="title txt button">
+                    <img src="image/big.png" align="center" style="width:550px;">
+                    <br>
+                    <center>
+                    <table style="width:80%;text-align:left;color:#FFFFFF; font-size:30;" border="0">
+                        <tr>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                กลุ่มดาว 12 ราศี หรือ กลุ่มดาวจักรราศี ( Zodiac ) เป็นกลุ่มดาวฤกษ์ 12 กลุ่มที่อยู่บนเส้นสุริยะวิถี เราทราบว่าโลกโคจรรอบดวงอาทิตย์รอบละ 1 ปี ดังนั้นถ้าเราสังเกตดวงอาทิตย์จากโลกโดยถือว่าโลกหยุดนิ่ง เราจะเห็นดวงอาทิตย์โคจรรอบโลก โดยดวงอาทิตย์จะปรากฏเปลี่ยนตำแหน่งไปตามกลุ่มดาวฤกษ์ 12 กลุ่มคือ ราศีมกร,ราศีกุมภ์,
+                                ราศีมีน,ราศีเมษ,ราศีพฤษภ,ราศีมิถุน,ราศีกรกฎ,ราศีสิงห์,ราศีกันย์,ราศีตุลย์,ราศีพิจิก,ราศีธนู ซึ่งแต่ละกลุ่มดาวตามช่วงวันเดือนปีเกิด จะมีผลต่อชะตา วิถีชีวิต ความเป็นอยู่ นิสัยใจคอ อย่างไรบ้าง
+                            </td>
+                        </tr></table>
+                    <br>
+                    
+                    <table style="width:50%;text-align:center;background-color:#fff0e6;color:#663300; font-size:30;" border="0">
+                        <tr>
+                            <td>
+                                    <h2>ข้อมูล</h2>
+									<label for="name">ชื่อ: </label>
+                                        <input type="text" id="name" name="name" ng-model="addForm.name" size="53"><br>
+                                    <label >วันเกิด</label><br>
+                                    <label for="day">วันที่: </label>
+                                        <input type="text" id="day" name="day" ng-model="addForm.day" size="2">&nbsp;
+                                    <label for="month">เดือน: </label>
+                                        <select name="month" id="month" ng-model="addForm.month">
+                                            <option value="มกราคม">มกราคม</option>
+                                            <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                                            <option value="มีนาคม">มีนาคม</option>
+                                            <option value="เมษายน">เมษายน</option>
+                                            <option value="พฤษภาคม">พฤษภาคม</option>
+                                            <option value="มิถุนายน">มิถุนายน</option>
+                                            <option value="กรกฏาคม">กรกฏาคม</option>
+                                            <option value="สิงหาคม">สิงหาคม</option>
+                                            <option value="กันยายน">กันยายน</option>
+                                            <option value="ตุลาคม">ตุลาคม</option>
+                                            <option value="พฤศจิกายน">พฤศจิกายน</option>
+                                            <option value="ธันวาคม">ธันวาคม</option>
+                                        </select>&nbsp;
+                                    <label for="year">ปี: </label>
+                                        <input type="text" id="year" name="year" ng-model="addForm.year" size="5"><br><br>
+
+                                <table border="0" align="center">
+                                    <tr>
+                                        <td>
+                                        <a href="edit.html">
+                                            <button type="submit" ng-click="add()" class="button button3" style=" background-color: #000066;">เพิ่มข้อมูลใหม่</button><br><br>
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="edit.html">
+                                        <button type="submit" class="button button3" style=" background-color: #0099cc;">มีข้อมูลอยู่แล้ว</button><br><br>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                        </center><br>
+
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+    <script type="text/javascript">
+        var app = angular.module("formApp",['ngResource'])
+        app.controller("FormCtrl", function($scope, $resource){
+            var Form = $resource('/api/forms/:form_id',{form_id: '@id'},
+                { 
+                    update: {method:'PUT' } 
+                })
+            $scope.editForm = {}
+            $scope.result = {}
+            $scope.forms = Form.query()
+
+            $scope.get = function(id) {
+                Form.get({form_id:id}, function(form) {
+                    $scope.result = form
+                })
+            }   
+
+            $scope.add =  function() {
+               //  var givenForm = new Form($scope.addForm)
+                // givenForm.$save(function(data){ 
+                //     console.log(data.message)                    
+                // }) 
+
+                Form.save({name: $scope.addForm.name, 
+                            day: $scope.addForm.day,
+                            month: $scope.addForm.month,
+                            year: $scope.addForm.year})
+                $scope.forms = Form.query()
+            }
+
+            $scope.edit = function(id) {
+                Form.get({form_id:id}, function(form) {
+                    $scope.editForm.id = id
+                    $scope.editForm.name = form.name
+                    $scope.editForm.day = form.day
+                    $scope.editForm.month = form.month
+                    $scope.editForm.year = form.year
+                    $scope.result = form
+                    $scope.message = 'Edited form ' +  id
+                })
+            }
+
+            $scope.update = function(id) {
+                Form.update( {form_id: id}, { name: $scope.editForm.name,
+                                              day: $scope.editForm.day,
+                                              month: $scope.editForm.month,
+                                              year: $scope.editForm.year})                
+                $scope.result = 'Update form ' + id
+                $scope.forms = Form.query()
+            }
+
+            $scope.delete = function(id) {
+                Form.delete( {form_id: id})
+                $scope.result = 'Delete form ' + id
+                $scope.forms = Form.query()
+            }
+
+            $scope.isEmpty = function(form) {
+                return Object.keys(form).length == 0
+            }
+
+            $scope.select = function(id, form) {
+                return id == form.id
+            }
+
+        })
+
+    </script>
+
+    </body>
+</html>

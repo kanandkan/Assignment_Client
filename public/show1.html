@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ทำนายราศี</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/css/app.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
+
+        <style type="text/css">
+            @font-face {  
+                font-family: 'PJ_WangNgan1.1';  
+                src: url('font/PJ_WangNgan1.1.eot');  
+                src: local('myfont'), url('font/PJ_WangNgan1.1.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                }
+            @font-face {  
+                font-family: 'Bangnampueng';  
+                src: url('font/Bangnampueng.eot');  
+                src: local('myfont'), url('font/Bangnampueng.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                } 
+            @font-face {  
+                font-family: 'WR Tish Kid2';  
+                src: url('font/WR Tish Kid2.eot');  
+                src: local('myfont'), url('font/WR Tish Kid2.ttf') format('truetype');  
+                font-weight: normal;  
+                 font-style: normal;  
+                } 
+
+
+            html, body {
+                background-image: url('image/bg.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                -o-background-size: 100% 100%, auto;
+                -moz-background-size: 100% 100%, auto;
+                -webkit-background-size: 100% 100%, auto;
+                background-size: 100% 100%, auto;
+                color: #FFFFFF;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 130px;
+                font-family: 'Bangnampueng', sans-serif;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .button {
+                border: none;
+                color: white;
+                padding: 2px 5px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                margin: 1px 1px;
+                cursor: pointer;
+                font-family: 'WR Tish Kid2', sans-serif;
+                font-size: 25px;
+            }
+            .button3 {border-radius: 8px;}
+
+            .m-b-md {
+                margin-bottom: 20px;
+            }
+
+            .txt{
+                font-family: 'WR Tish Kid2', sans-serif;
+                color: #663300;
+                font-size: 50px;
+            }
+
+            .txt2{
+                font-size: 70px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-center position-ref">
+            <div class="content">
+                <div class="title m-b-md">
+                    คำทำนาย
+                </div>
+                <div ng-app="formApp" ng-controller="FormCtrl">
+                <div class="title txt button">
+                    <br>
+                    <center>
+                   
+                    <table style="width:100%;color:#663300; font-size:20;" border="1">
+                        <tr align="center">
+                            <td>
+                                <img src="/image/1.png">
+                            </td>
+                        </tr>
+
+                    </table><br>
+                    <table style="width:80%;color:#e6ffff; font-size:20;text-align:center;" border="0">
+                        <tr>
+                            <td style="font-size:50;" >
+                                <a href="home.html" style="color:#e6ffff;">
+                                    หน้าแรก
+                                </a>
+                            </td>
+                            <td style="font-size:50;">
+                                <a href="show.html" style="color:#e6ffff;">
+                                    เลือกราศี
+                                </a>
+                            </td>
+                            <td style="font-size:50;" >
+                                <a href="edit.html" style="color:#e6ffff;">
+                                    แก้ไขข้อมูล
+                                </a>
+                            </td>
+                        </tr>
+
+                    </table><br>
+
+                        </center><br>
+
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </body>
+</html>
